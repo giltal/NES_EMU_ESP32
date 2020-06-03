@@ -10,8 +10,7 @@ https://www.buydisplay.com/lcd-3-5-inch-320x480-tft-display-module-optl-touch-sc
 You will need to provide controls, we are using an analog joystick + 2 physical buttons, select and start are input from the touch screen.
 Audio is driven through DAC25 and DAC26, you will need an amplified speaker (PC speakers for example)
 
-The project is compiled in visual studio with visual micro plug in.
-You need to add -DNOFRENDO_DEBUG in the project properties: Extra CPP flags
+The project is compiled in visual studio with visual micro plug in, or in the Arduino SDK (application)
 
 It contains 8 ROMs within the code you can choose to launch.
 
@@ -23,4 +22,6 @@ The modified SPI.h\c should be copied to the ESP32 location:
 
 c:\Users\giltal\AppData\Local\arduino15\packages\esp32\hardware\esp32\1.0.4\libraries\SPI\src\
 
-giltal is the specific user.
+giltal is your specific user.
+
+Have fun :-)

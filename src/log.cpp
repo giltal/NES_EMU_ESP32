@@ -28,6 +28,7 @@
 #include <stdarg.h>
 #include "noftypes.h"
 #include "log.h"
+#include "nes.h"
 
 
 //static FILE *errorlog = NULL;
@@ -37,10 +38,6 @@ static int (*log_func)(const char *string) = NULL;
 #ifdef NOFRENDO_DEBUG
 int log_init(void)
 {
-//   errorlog = fopen("errorlog.txt", "wt");
-//   if (NULL == errorlog)
-//      return (-1);
-
    return 0;
 }
 
@@ -51,8 +48,6 @@ void log_shutdown(void)
    mem_checkleaks();
    mem_cleanup();
 
-//   if (NULL != errorlog)
-//      fclose(errorlog);
 }
 
 int log_print(const char *string)
@@ -61,10 +56,6 @@ int log_print(const char *string)
    if (NULL != log_func)
       log_func(string);
    
-   /* Log it to disk, as well */
-//   fputs(string, errorlog);
-//	printf("%s\n", string);
-
    return 0;
 }
 

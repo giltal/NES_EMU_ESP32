@@ -357,11 +357,11 @@ static void gui_tickdec(void)
 #ifdef NOFRENDO_DEBUG
    /* Check for corrupt memory block every 10 seconds */
    hertz_ticks += ticks;
-   if (hertz_ticks >= (10 * gui_refresh))
+   /*if (hertz_ticks >= (10 * gui_refresh))
    {
       hertz_ticks -= (10 * gui_refresh);
       mem_checkblocks(); 
-   }
+   }*/
 #endif
 
    /* TODO: bleh */

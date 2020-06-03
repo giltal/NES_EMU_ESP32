@@ -302,7 +302,6 @@ static void free_write(int num_dirties, rect_t *dirty_rects)
 
 static int counter = 0;
 bool videoTaskInProgress;
-//*(volatile unsigned int*)0x50000000
 
 static void custom_blit(bitmap_t *bmp, int num_dirties, rect_t *dirty_rects)
 {

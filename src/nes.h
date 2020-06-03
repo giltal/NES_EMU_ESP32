@@ -50,6 +50,8 @@
 
 #define  MAX_MEM_HANDLERS     32
 
+#define NOFRENDO_DEBUG 1
+
 enum
 {
    SOFT_RESET,

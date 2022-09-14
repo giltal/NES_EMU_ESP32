@@ -15,7 +15,7 @@ The project is compiled in visual studio with visual micro plug in, or in the Ar
 It contains 8 ROMs within the code you can choose to launch.
 
 You will need few more libraries located here: 
-https://github.com/giltal/ESP32_Course/Drivers
+https://github.com/giltal/ESP32_Course/tree/main/Drivers
 
 Just locate them in the Arduino library folder.
 The modified SPI.h\c should be copied to the ESP32 location:
